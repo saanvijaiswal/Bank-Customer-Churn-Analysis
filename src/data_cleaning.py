@@ -125,3 +125,43 @@ plt.xlabel("Number of Products")
 plt.ylabel("Churn Rate")
 plt.show()
 print(df['NumOfProducts'].value_counts().sort_index())
+
+
+balance_churn = df_analysis.groupby('Exited')['Balance'].mean()
+print(balance_churn)
+plt.figure(figsize=(8, 5))
+
+sns.boxplot(
+    data=df,
+    x='Exited',
+    y='Balance'
+)
+
+plt.title("Account Balance Distribution by Customer Churn")
+plt.xlabel("Exited (0 = Stayed, 1 = Left)")
+plt.ylabel("Account Balance")
+plt.show()
+
+
+credit_by_churn = df_analysis.groupby('Exited')['CreditScore'].mean()
+print(credit_by_churn)
+
+plt.figure(figsize=(8,5))
+sns.boxplot(data=df_analysis, x='Exited', y='CreditScore')
+plt.title("Credit Score by Churn Rate")
+plt.xlabel("Exited")
+plt.ylabel("Credit Score")
+plt.show()
+
+
+salary_by_churn = df_analysis.groupby('Exited')['EstimatedSalary'].mean()
+print(salary_by_churn)
+
+numerical_df = df_analysis.select_dtypes(include=['int64', 'float64'])
+correlation_matrix = numerical_df.corr()
+print(correlation_matrix)
+
+plt.figure(figsize=(10,8))
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f")
+plt.title("Correlation Matrix - Numerical Features")
+plt.show()
