@@ -1,0 +1,11 @@
+{
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "bank customer churn",
+            "database": "${workspaceFolder:Bank-Customer-Churn-Analysis}/database/bank_churn1.db"
+        }
+    ]
+}

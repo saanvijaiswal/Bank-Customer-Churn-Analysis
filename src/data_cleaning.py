@@ -27,9 +27,7 @@ df = df.drop(columns=[
 
 print(df.head())
 
-df.to_csv(
-    "data/cleaned/bank_customer_cleaned.csv", index=False
-)
+df.to_csv("data/cleaned/bank_customer_cleaned.csv", index=False)
 
 print("Saved Cleaned Dataset")
 
