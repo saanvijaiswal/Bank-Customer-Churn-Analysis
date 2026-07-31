@@ -1,6 +1,8 @@
 # Bank-Customer-Churn-Analysis
 Customer churn is one of the biggest challenges for banks because acquiring a new customer costs significantly more than retaining an existing one. This project analyzes customer demographics, banking behavior, and account information to identify the key drivers behind customer attrition and uncover opportunities to improve customer retention.
 
+**Why are customers leaving the bank, and what actions can reduce churn?**
+
 The project follows the following workflow:
 
 * Data Cleaning & Validation
@@ -10,8 +12,6 @@ The project follows the following workflow:
 * Interactive Power BI Dashboard
 
 This project focuses on answering the following business question-
-
-**Why are customers leaving the bank, and what actions can reduce churn?**
 
 
 ## Dataset
