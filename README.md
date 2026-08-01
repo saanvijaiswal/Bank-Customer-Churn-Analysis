@@ -5,20 +5,17 @@ Customer churn is one of the biggest challenges for banks because acquiring a ne
 
 The project follows the following workflow:
 
-* Data Cleaning & Validation
-* Feature Engineering
-* Exploratory Data Analysis (EDA)
-* SQL Business Analysis
-* Interactive Power BI Dashboard
-
-This project focuses on answering the following business question-
-
+* Data Cleaning & Validation -> Python
+* Feature Engineering -> Python
+* Exploratory Data Analysis (EDA) -> Python
+* SQL Business Analysis -> SQLite
+* Interactive Power BI Dashboard -> Power BI
 
 ## Dataset
 
 **Source:** Kaggle – Bank Customer Churn Prediction Dataset
 
-The dataset contains customer information including:
+The dataset contains 10,000 customer records including:
 
 * Demographics
 * Geography
@@ -88,6 +85,12 @@ Visualizations included:
 * Correlation Heatmap
 * Churn Rate Comparisons
 
+Correlation Matrix-
+<img width="1536" height="752" alt="image" src="https://github.com/user-attachments/assets/b4c48895-2982-42bd-b242-d656c26f2cbc" />
+
+Age Distribution Box Plot
+<img width="1255" height="835" alt="image" src="https://github.com/user-attachments/assets/0498496c-9c17-465a-aff6-30eff753c2bc" />
+
 
 ### 4. SQL Business Analysis
 
@@ -99,6 +102,13 @@ Built reusable SQLite views for Power BI:
 * **vw_country_performance**
 
 These views aggregate KPIs and customer segments to support dashboard reporting.
+Along with that, further analysis uncovered a few interesting insights-
+**Were the churned customers above-average or below-average customers? Our analysis shows that the majority of them were above average.**
+<img width="397" height="170" alt="image" src="https://github.com/user-attachments/assets/b52e072f-83f3-4732-9c44-56be6a8149e0" />
+
+**Total Balance lost by countries ranked**
+<img width="715" height="177" alt="image" src="https://github.com/user-attachments/assets/bb6f8b29-f917-4b62-a82f-42c2e448dd73" />
+
 
 
 ### 5. Power BI Dashboard
@@ -111,7 +121,15 @@ The dashboard presents:
 * Country Performance
 * Interactive slicers and drill-downs
 
----
+Customer Value Page
+<img width="1167" height="642" alt="image" src="https://github.com/user-attachments/assets/709ffd10-9373-489d-90ad-5c995d581c2d" />
+
+Executive Overview Page
+<img width="1162" height="652" alt="image" src="https://github.com/user-attachments/assets/c0f11a93-a16e-4f2c-a7ec-51fa91e60aec" />
+
+Retention Analysis Page
+<img width="1172" height="652" alt="image" src="https://github.com/user-attachments/assets/55725c05-9716-497a-930f-3a9e2a90e22c" />
+
 
 # Key Business Insights
 
