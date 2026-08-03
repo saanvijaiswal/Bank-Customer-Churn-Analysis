@@ -113,22 +113,27 @@ Along with that, further analysis uncovered a few interesting insights-
 
 ### 5. Power BI Dashboard
 
-The dashboard presents:
+The project is presented as a single, infographic-style Power BI dashboard designed around a custom monochromatic plum/purple theme, combining KPI monitoring with visual storytelling.
 
-* Executive KPIs
-* Customer Segmentation
-* Retention Analysis
-* Country Performance
-* Interactive slicers and drill-downs
+**Top filter bar**
+Interactive slicers for Geography, Age Group, Value Segment, and Gender, plus a Tenure range filter - all changes propagate live across every visual on the page.
 
-Customer Value Page
-<img width="1167" height="642" alt="image" src="https://github.com/user-attachments/assets/709ffd10-9373-489d-90ad-5c995d581c2d" />
+**KPI card row**
+Four headline metrics - Total Customers, Churn Rate, Active Members %, and Average Tenure - each shown against the overall portfolio average using dynamic variance indicators, so any filtered view is instantly benchmarked against the full customer base.
 
-Executive Overview Page
-<img width="1162" height="652" alt="image" src="https://github.com/user-attachments/assets/c0f11a93-a16e-4f2c-a7ec-51fa91e60aec" />
+**Trend & comparison visuals**
+- Dual-axis combo chart: customer volume vs. churn rate across tenure years
+- Dual-axis combo chart: customer volume vs. churn rate by number of products held
+- Donut chart: customer distribution across balance segments, with outer leader-line labels
+- Ranked horizontal bar charts: churn rate by age group and by value segment, with color-scaled bars (green → red) highlighting the highest-risk segments at a glance
+- Ranked Bar Chart: customer count by geography
+- Gauge visual: average customer value score against portfolio benchmark
 
-Retention Analysis Page
-<img width="1172" height="652" alt="image" src="https://github.com/user-attachments/assets/55725c05-9716-497a-930f-3a9e2a90e22c" />
+Together, the layout turns the underlying SQL views and DAX measures into a single at-a-glance executive view.
+<img width="1312" height="731" alt="image" src="https://github.com/user-attachments/assets/c65211c7-4ea6-4dc2-be8d-4eece932c6c5" />
+
+Interactive dashboard when the slicers are set to Geography - Germany, Age - All, Value Segment - Silver, Gender - Female & Tenure as 0 to 10 years.
+<img width="1307" height="731" alt="image" src="https://github.com/user-attachments/assets/f9c66b29-2aa2-4476-9416-809f964c0f9b" />
 
 
 # Key Business Insights
